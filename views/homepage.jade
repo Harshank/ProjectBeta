@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h2(align="center") Welcome #{username}
+    p
+        form.form-horizontal(method="POST", action="/logout")
+            div.input-group
+                div.col-sm-11
+                    input.btn(type="submit",value="Logout")
+    p Categories
+    ul  
+        - if(restrList !=null)
+            each restr, index in restrList
+             li= restr.name

@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  div.bkimg
+  h1(align="center")= title
+  p(align="center") Welcome to #{title}
+  form.form-horizontal(method="POST", action="/login")
+        div.input-group
+            label.col-sm-4 Name
+            div.col-sm-9
+                input.form-control#inputEmail1(type="text",name="username",placeholder="User Name")
+        div.input-group
+            label.col-sm-4 Password
+            div.col-sm-9
+                input.form-control#inputPassword3(type="password",name="password",placeholder="Password")
+        p
+        div.col-sm-9
+            input.btn(type="submit",value="Login")
+//  form(method="POST", action="loginform")
+//    p
+//      input.btn-sm(type="submit",value="Register")
