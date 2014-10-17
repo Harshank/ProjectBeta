@@ -14,7 +14,7 @@ if(req.user === undefined) {
   if(user.length >1){
   		res.redirect('/homepg');
   } else {
-  		res.render('home', { title: 'Yelp' });
+  		res.render('home', { title: 'Harshank Prj' });
 
   }
 
