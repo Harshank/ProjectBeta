@@ -1,0 +1,27 @@
+var mongoose = require('mongoose');
+module.exports = mongoose.model('stop',{
+	ADA_ACCESS: String,
+	ATNAME: String,
+	BENCH_PAD: String,
+	C_CITY: String,
+	JURISD: String,
+	LAT: Number,
+	LONG_: Number,
+	Loc: {type: [Number],index: '2d'},
+	ONNAME: String,
+	PCC_BUS_PA: String,
+	PRIVATE_BE: Number,
+	ROUTES_LIS: String,
+	RTI_511: String,
+	RTI_STOP: Number,
+	SHELTER: String,
+	SHELTER_PA: String,
+	SIDEWALK_W: Number,
+	STOP: Number,
+	STPNAM: String,
+	ST_DIR: String,
+	ST_LOC: String,
+	TACTILE_SI: String,
+	VTA_BENCH: Number,
+	VTA_TRASH: Number
+});
